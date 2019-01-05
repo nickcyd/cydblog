@@ -4,13 +4,46 @@
 <head>
     <meta charset="UTF-8">
     <title>陈有德的官方博客</title>
+    <style>
+        .default_profile {
+            margin-left: 8%;
+        }
+
+        #default_profile {
+            float: left;
+        }
+
+        .default_profile div {
+            text-align: center;
+            float: left;
+            margin-left: 3%;
+        }
+
+        #clear {
+            clear: both;
+        }
+    </style>
 </head>
 
 
 <body>
 <h1 style="height: 2.5em;width: 100%;background: skyblue;line-height: 2.5em">陈有德的官方博客 -- 码德</h1>
-<h2 style="margin-left: 5%;">好久没写独立 Django 的项目了，全忘了，纯属玩一玩</h2>
-<h3 style="margin-left: 10%;color:red;">I am nothing but I must be everything.</h3>
-<p style="margin-left: 50%">{{ c_time }}</p>
+<div class="default_profile">
+    <img src="/static/profile.jpg" alt="默认头像" id="default_profile">
+    <div>
+        <p>姓名：陈有德</p>
+        <p>年龄：20 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+        <p>性别：男 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+        <p>职业：码农 &nbsp;&nbsp;&nbsp;&nbsp;</p>
+    </div>
+</div>
+
+<div id="clear"></div>
+
+<div>
+    <h2 style="margin-left: 8%;">好久没写独立 Django 的项目了，全忘了，纯属玩一玩</h2>
+    <h3 style="margin-left: 15%;color:red;">I am nothing but I must be everything.</h3>
+    <p style="margin-left: 50%">{{ c_time }}</p>
+</div>
 </body>
 </html>
